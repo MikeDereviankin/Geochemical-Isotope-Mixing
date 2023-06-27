@@ -61,7 +61,8 @@ In summary, both sources provide important insights into the underlying scientif
 - Create a scatter plot of the data using ggplot2
 - Save the plot as a PNG file
 
-![binary_linear_curve](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/98644275-f9e3-4677-b198-b407c391ad89)
+![binary_dependent_plot](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/2206273b-eda4-4c6c-a43c-ab9032a126e6)
+
 
 
 
