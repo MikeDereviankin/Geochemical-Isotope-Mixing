@@ -49,7 +49,7 @@ In summary, both sources provide important insights into the underlying scientif
 - Create a scatter plot of the data using ggplot2
 - Save the plot as a PNG file
 
-![binary_linear_curve](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/e329663b-8a9f-4ff3-9c4a-aec7cbd10d92)
+![binary_linear_curve](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/62f46f55-953e-4807-a2ea-c35734dbe8e9)
 
 # Isotope Dependent Binary Mixing
 
@@ -61,7 +61,8 @@ In summary, both sources provide important insights into the underlying scientif
 - Create a scatter plot of the data using ggplot2
 - Save the plot as a PNG file
 
-![binary_dependent_plot](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/2206273b-eda4-4c6c-a43c-ab9032a126e6)
+![binary_dependent_plot](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/182b0058-c81c-4836-ab52-542ca3398bf4)
+
 
 
 
