@@ -49,6 +49,8 @@ In summary, both sources provide important insights into the underlying scientif
 - Create a scatter plot of the data using ggplot2
 - Save the plot as a PNG file
 
+![binary_linear_curve](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/e329663b-8a9f-4ff3-9c4a-aec7cbd10d92)
+
 # Isotope Dependent Binary Mixing
 
 - Define mixing proportions using seq() function
@@ -58,6 +60,10 @@ In summary, both sources provide important insights into the underlying scientif
 - Save data frame as a CSV file
 - Create a scatter plot of the data using ggplot2
 - Save the plot as a PNG file
+
+![binary_dependent_plot](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/36495f18-bc52-499b-a544-529ba7f3f4ed)
+
+
 
 
 
