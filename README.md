@@ -4,12 +4,13 @@
 
 This repository contains R code to generate a binary mixing curve using dependent mixing proportions of different fluids. The mixing curve is plotted using the ggplot2 library, and the results are saved as a CSV file and a PNG image.
 
+https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/22b42705-88d6-4473-b021-5e1464b004d6
+
 ## License
 This code is licensed under the MIT License.
 
 ## Dependencies
 This code requires several R packages, which can be installed using the following commands:
-
 
 library(ggplot2)
 library(hrbrthemes)
@@ -47,6 +48,7 @@ In summary, both sources provide important insights into the underlying scientif
 - Create a data frame with three columns: mixing_proportions, Cm_values, and ratio_linear
 - Save data frame as a CSV file
 - Create a scatter plot of the data using ggplot2
+- Create an interactive scatter plot for mixing_proporitons, Cm_values, and ratio_linear
 - Save the plot as a PNG file
 
 ![binary_linear_curve](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/62f46f55-953e-4807-a2ea-c35734dbe8e9)
@@ -59,6 +61,7 @@ In summary, both sources provide important insights into the underlying scientif
 - Create a data frame with three columns: proportions, concentration_mix, and iso_ratios
 - Save data frame as a CSV file
 - Create a scatter plot of the data using ggplot2
+- Create an interactive scatter plot for proportions, concentration_mix, and iso_ratios
 - Save the plot as a PNG file
 
 ![binary_dependent_plot](https://github.com/MikeDereviankin/Geochemical-Isotope-Mixing/assets/81693929/182b0058-c81c-4836-ab52-542ca3398bf4)
