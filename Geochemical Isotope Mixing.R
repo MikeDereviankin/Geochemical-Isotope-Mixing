@@ -95,8 +95,8 @@ ggplot(df_dependent, aes(x=Sr_concentration_mix, y=Sr_iso_ratios)) +
   geom_point(size = 4, color = "darkolivegreen", alpha = 0.75) +
   scale_x_log10(limits = c(0.001, 1000), breaks = c(0.001, 0.01,  0.1, 1, 10, 100, 1000)) +
   labs(x = "Concentration (mg/L)",
-       y = expression(paste(delta^{87},"Sr/","^{86}Sr")),
-       title = "Parabolic mixing curve: MISS4 Versus MOR") +
+       y = "ratio"),
+       title = "Parabolic mixing curve") +
   theme_classic()
 
 print(binary_dependent_plot)
