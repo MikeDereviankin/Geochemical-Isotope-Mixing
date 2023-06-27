@@ -12,19 +12,19 @@ This code is licensed under the MIT License.
 ## Dependencies
 This code requires several R packages, which can be installed using the following commands:
 
-library(ggplot2)
-library(hrbrthemes)
-library(tidyverse)
-library(dplyr)
-library(wesanderson)
-library(RColorBrewer)
-library(manipulate)
-library(plotly)
-library(shiny)
-library(leaflet)
-library(GGally)
-library(tidymodels)
-library(yardstick)
+-library(ggplot2)
+-library(hrbrthemes)
+-library(tidyverse)
+-library(dplyr)
+-library(wesanderson)
+-library(RColorBrewer)
+-library(manipulate)
+-library(plotly)
+-library(shiny)
+-library(leaflet)
+-library(GGally)
+-library(tidymodels)
+-library(yardstick)
 
 # Introduction and Resources
 
