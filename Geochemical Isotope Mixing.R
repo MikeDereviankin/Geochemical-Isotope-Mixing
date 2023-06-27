@@ -4,6 +4,7 @@
 
 # load ggplot2
 library(ggplot2)
+library(plotly)
 library(hrbrthemes)
 library(tidyverse)
 library(dplyr)
@@ -19,7 +20,7 @@ library(yardstick)
 
 # Define end-member parameters 
 C1 <- 0.5   # concentration of EM1
-C2 <- 399   # concentration of EM2
+C2 <- 15   # concentration of EM2
 δ1 <- 0.709071   # Isotopic ratio of EM1
 δ2 <- 0.70791    # Isotopic ratio of EM2
 
@@ -64,9 +65,19 @@ binary_linear_plot <-
 
 print(binary_linear_plot)
 
+# Create plotly object
+binary_linear_plotly <- plot_ly(df, x = ~Cm_values, y = ~Sr_ratio_linear, color = ~mixing_proportions, type = "scatter",
+                              mode = "markers", marker = list(size = 10, opacity = 0.8)) %>%
+  layout(title = "Binary mixing curve for Concentration and isotope ratio",
+         xaxis = list(title = "Concentration of mixture", type = "log"),
+         yaxis = list(title = "Isotopic ratio"))
+
+# Display the plot
+binary_linear_plotly
+
 #save ggplot
 # Save as PNG
-ggsave("binary_linear_curve.png", plot = binary_linear_plot, width = 7, height = 5, units = "in", dpi = 600)
+ggsave("binary_linear_curve.png", plot = binary_linear_plot, width = 5, height = 4, units = "in", dpi = 300)
 
 # Isotope Dependent Binary Mixing -----------------------------------------
 
@@ -93,14 +104,30 @@ write.csv(df_dependent, "Binary_Dependent_mixing.csv")
 binary_dependent_plot <- 
 ggplot(df_dependent, aes(x=Sr_concentration_mix, y=Sr_iso_ratios)) +
   geom_point(size = 4, color = "darkolivegreen", alpha = 0.75) +
-  scale_x_log10(limits = c(0.001, 1000), breaks = c(0.001, 0.01,  0.1, 1, 10, 100, 1000)) +
-  labs(x = "Concentration (mg/L)",
-       y = "ratio"),
+  scale_x_log10() +
+  labs(x = "Concentration Mixture",
+       y = 'Isotopic ratio',
        title = "Parabolic mixing curve") +
   theme_classic()
 
 print(binary_dependent_plot)
 
+#Create the plotly scatterplot object
+binary_dependent_plotly <- plot_ly(df_dependent,  x = ~Sr_concentration_mix, y = ~Sr_iso_ratios, 
+                                   color = ~proportions,
+                                   type = "scatter", mode = "markers",
+                                   marker = list(size = 10, opacity = 0.8),
+                                   hovertemplate = "Concentration Mixture: %{x:.2f}<br>" %>%
+                                     paste("Isotopic Ratio: %{y:.2f}<br>") %>%
+                                     paste("Proportions: %{marker.color:.2f}")) %>%
+  
+  layout(title = "Parabolic mixing curve",
+         xaxis = list(title = "Concentration Mixture", type = "log"),
+         yaxis = list(title = "Isotopic ratio"))
+
+#Display the plot
+binary_dependent_plotly
+
 #save ggplot
 # Save as PNG
-ggsave("binary_dependent_plot.png", plot = binary_dependent_plot, width = 7, height = 5, units = "in", dpi = 600)
+ggsave("binary_dependent_plot.png", plot = binary_dependent_plot, width = 5, height = 4, units = "in", dpi = 300)
